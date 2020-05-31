@@ -1,0 +1,326 @@
+2000
+<!--
+
+       Copyright 2016-2017 the original author or authors.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<!DOCTYPE html>
+<!--
+
+       Copyright 2016-2017 the original author or authors.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JPetStore Demo</title>
+    <meta charset="UTF-8">
+    
+    <link rel="StyleSheet" href="/css/jpetstore.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+<div id="Header">
+
+    <div id="Logo">
+        <div id="LogoContent">
+            <a href="/catalog">
+                <img src="/images/logo-topbar.gif" />
+            </a>
+        </div>
+    </div>
+
+
+    <div id="Menu">
+        <div id="MenuContent">
+            <a href="/cart">
+                <img align="middle" name="img_cart" src="/images/cart.gif" />
+            </a>
+            <img align="middle" src="/images/separator.gif" />
+            
+            <a href="/logout">
+                Sign Out
+            </a>
+            <img align="middle" src="/images/separator.gif"/>
+            <a href="/my/account/update?form">
+                My Account
+            </a>
+            <img align="middle" src="/images/separator.gif" />
+            <a href="/help.html" target="help">
+                ?
+            </a>
+        </div>
+    </div>
+
+    <div id="Search">
+        <div id="SearchContent">
+            <form action="/catalog/products" method="get">
+                <input name="keywords" size="14" value=""/>
+                <input id="searchProducts" type="submit" value="Search" />
+            </form>
+        </div>
+    </div>
+
+    <div id="QuickLinks">
+        <a href="/catalog/categories/FISH">
+            <img src="/images/sm_fish.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/DOGS">
+            <img src="/images/sm_dogs.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/REPTILES">
+            <img src="/images/sm_reptiles.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/CATS">
+            <img src="/images/sm_cats.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/BIRDS">
+            <img src="/images/sm_birds.gif" />
+        </a>
+    </div>
+
+</div>
+
+<div id="Content">
+
+    
+
+    <section>
+
+        <div id="BackLink">
+            <a href="/catalog">
+                Return to Main Menu
+            </a>
+        </div>
+
+        <div id="Catalog">
+
+            <table>
+                <tr>
+                    <th align="center" colspan="2">
+                        Order #<span id="orderId">6839</span>
+                        <span>2020/05/24 10:51:47</span>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">Payment Details</th>
+                </tr>
+                <tr>
+                    <td>Card Type:</td>
+                    <td><span>Visa</span></td>
+                </tr>
+                <tr>
+                    <td>Card Number:</td>
+                    <td><span>456549</span> * Fake number!</td>
+                </tr>
+                <tr>
+                    <td>Expiry Date (MM/YYYY):</td>
+                    <td><span>07/2022</span></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Billing Address</th>
+                </tr>
+                <tr>
+                    <td>First name:</td>
+                    <td><span>balu</span></td>
+                </tr>
+                <tr>
+                    <td>Last name:</td>
+                    <td><span>reddy</span></td>
+                </tr>
+                <tr>
+                    <td>Address 1:</td>
+                    <td><span>DPM</span></td>
+                </tr>
+                <tr>
+                    <td>Address 2:</td>
+                    <td><span>KPM</span></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><span>vizag</span></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td><span>Telangana</span></td>
+                </tr>
+                <tr>
+                    <td>Zip:</td>
+                    <td><span>500038</span></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td><span>India</span></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Shipping Address</th>
+                </tr>
+                <tr>
+                    <td>First name:</td>
+                    <td><span>balu</span></td>
+                </tr>
+                <tr>
+                    <td>Last name:</td>
+                    <td><span>reddy</span></td>
+                </tr>
+                <tr>
+                    <td>Address 1:</td>
+                    <td><span>DPM</span></td>
+                </tr>
+                <tr>
+                    <td>Address 2:</td>
+                    <td><span>KPM</span></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><span>vizag</span></td>
+                </tr>
+                <tr>
+                    <td>State:</td>
+                    <td><span>Telangana</span></td>
+                </tr>
+                <tr>
+                    <td>Zip:</td>
+                    <td><span>500038</span></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td><span>India</span></td>
+                </tr>
+                <tr>
+                    <td>Courier:</td>
+                    <td><span>UPS</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Status: <span>P</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table>
+                            <tr>
+                                <th>Item ID</th>
+                                <th>Description</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Total Cost</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/catalog/items/EST-1">
+                                        <span>EST-1</span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div>
+                                        <span>Large</span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span>Angelfish</span>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+          
+8b6
+                          <span>2</span>
+                                </td>
+                                <td>
+                                    $<span>16.50</span>
+                                </td>
+                                <td>
+                                    $<span>33.00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="/catalog/items/EST-8">
+                                        <span>EST-8</span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div>
+                                        <span>Male Puppy</span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span>Poodle</span>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <span>1</span>
+                                </td>
+                                <td>
+                                    $<span>18.50</span>
+                                </td>
+                                <td>
+                                    $<span>18.50</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="5">
+                                    Total:
+                                    $<span>51.50</span>
+                                </th>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+</div>
+
+<div id="Footer">
+
+    <div id="PoweredBy">
+        <a href="http://kazuki43zoo.com" target="homepage">
+            kazuki43zoo.com
+        </a>
+    </div>
+
+    <div id="Banner">
+        
+    </div>
+
+</div>
+
+
+</body>
+</html>
+0
+

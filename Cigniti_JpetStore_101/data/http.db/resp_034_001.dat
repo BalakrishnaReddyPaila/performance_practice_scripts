@@ -1,0 +1,297 @@
+<!--
+
+       Copyright 2016-2017 the original author or authors.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<!DOCTYPE html>
+<!--
+
+       Copyright 2016-2017 the original author or authors.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JPetStore Demo</title>
+    <meta charset="UTF-8">
+    
+    <link rel="StyleSheet" href="/css/jpetstore.css" type="text/css" media="screen" />
+</head>
+
+<body>
+
+<div id="Header">
+
+    <div id="Logo">
+        <div id="LogoContent">
+            <a href="/catalog">
+                <img src="/images/logo-topbar.gif" />
+            </a>
+        </div>
+    </div>
+
+
+    <div id="Menu">
+        <div id="MenuContent">
+            <a href="/cart">
+                <img align="middle" name="img_cart" src="/images/cart.gif" />
+            </a>
+            <img align="middle" src="/images/separator.gif" />
+            
+            <a href="/logout">
+                Sign Out
+            </a>
+            <img align="middle" src="/images/separator.gif"/>
+            <a href="/my/account/update?form">
+                My Account
+            </a>
+            <img align="middle" src="/images/separator.gif" />
+            <a href="/help.html" target="help">
+                ?
+            </a>
+        </div>
+    </div>
+
+    <div id="Search">
+        <div id="SearchContent">
+            <form action="/catalog/products" method="get">
+                <input name="keywords" size="14" value=""/>
+                <input id="searchProducts" type="submit" value="Search" />
+            </form>
+        </div>
+    </div>
+
+    <div id="QuickLinks">
+        <a href="/catalog/categories/FISH">
+            <img src="/images/sm_fish.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/DOGS">
+            <img src="/images/sm_dogs.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/REPTILES">
+            <img src="/images/sm_reptiles.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/CATS">
+            <img src="/images/sm_cats.gif" />
+        </a>
+        <img src="/images/separator.gif" />
+        <a href="/catalog/categories/BIRDS">
+            <img src="/images/sm_birds.gif" />
+        </a>
+    </div>
+
+</div>
+
+<div id="Content">
+
+    
+
+    <section>
+
+        <div id="Catalog">
+
+            <form action="/my/account/update" method="post"><input type="hidden" name="_csrf" value="6af53061-b08e-4f7a-bf15-3142f426c0ac"/>
+
+                <h3>User Information</h3>
+
+                <table>
+                    <tr>
+                        <td>User ID:</td>
+                        <td>
+                            <span>balu1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>New password:</td>
+                        <td>
+                            <input type="password" id="password" name="password" value=""/>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Repeat password:</td>
+                        <td>
+                            <input type="password" id="repeatedPassword" name="repeatedPassword" value=""/>
+                            
+                        </td>
+                    </tr>
+                </table>
+
+                <div>
+    <h3>Account Information</h3>
+
+    <table>
+        <tr>
+            <td>First name:</td>
+            <td>
+                <input id="firstName" name="firstName" value="balu"/>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Last name:</td>
+            <td>
+                <input id="lastName" name="lastName" value="reddy"/>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>
+                <input size="40" id="email" name="email" value="balureddy.paila@gmail.com"/>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td>
+                <input id="phone" name="phone" value="09908944802"/>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Address 1:</td>
+            <td>
+                <input size="40" id="address1" name="address1" value="DPM"/>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Address 2:</td>
+            <td>
+                <input size="40" id="address2" name="address2" value="KPM"/>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td>
+                <input id="city" name="city" value="vizag"/>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td>
+                <input size="4" id="state" name="state" value="Telangana"/>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Zip:</td>
+            <td>
+                <input size="10" id="zip" name="zip" value="500038"/>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td>
+                <input size="15" id="country" name="country" value="India"/>
+                
+            </td>
+        </tr>
+    </table>
+
+    <h3>Profile Information</h3>
+
+    <table>
+        <tr>
+            <td>Language Preference:</td>
+            <td>
+                <select id="languagePreference" name="languagePreference">
+                    <option value="English" selected="selected">English</option>
+                    <option value="Japanese">Japanese</option>
+                </select>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Favourite Category:</td>
+            <td>
+                <select id="favouriteCategoryId" name="favouriteCategoryId">
+                    <option value="FISH" selected="selected">FISH</option>
+                    <option value="DOGS">DOGS</option>
+                    <option value="REPTILES">REPTILES</option>
+                    <option value="CATS">CATS</option>
+                    <option value="BIRDS">BIRDS</option>
+                </select>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Enable MyList:</td>
+            <td>
+                <input type="checkbox" id="listOption1" name="listOption" value="true"/><input type="hidden" name="_listOption" value="on"/>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Enable MyBanner:</td>
+            <td>
+                <input type="checkbox" id="bannerOption1" name="bannerOption" value="true"/><input type="hidden" name="_bannerOption" value="on"/>
+                
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+                <input id="save" type="submit" value="Save Account Information"/>
+
+            </form>
+
+            <a href="/my/orders">
+                My Orders
+            </a>
+
+        </div>
+
+
+    </section>
+</div>
+
+<div id="Footer">
+
+    <div id="PoweredBy">
+        <a href="http://kazuki43zoo.com" target="homepage">
+            kazuki43zoo.com
+        </a>
+    </div>
+
+    <div id="Banner">
+        
+    </div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Cache-Control: no-store
+Content-Language: en-US
+Content-Type: text/html;charset=UTF-8
+Date: Sun, 24 May 2020 11:24:54 GMT
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Vcap-Request-Id: 39d5d4f6-fd6b-47bc-662b-0319f266cc87
+X-Xss-Protection: 1; mode=block
+transfer-encoding: chunked
+Connection: keep-alive
+

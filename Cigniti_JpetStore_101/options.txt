@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\dell\Documents\VuGen\Scripts\Cigniti_JpetStore_101
+-ID:\LoadRunner\include
+-ec:\users\dell\documents\vugen\scripts\cigniti_jpetstore_101\\logfile.log
+c:\users\dell\documents\vugen\scripts\cigniti_jpetstore_101\\combined_Cigniti_JpetStore_101.c
+c:\users\dell\documents\vugen\scripts\cigniti_jpetstore_101\\pre_cci.c

@@ -1,0 +1,8 @@
+[hosts]
+ib.srch.bar=
+datastore.srchmgr.com=
+clientservices.googleapis.com=
+ssl.gstatic.com=
+jpetstore.cfapps.io=
+content-autofill.googleapis.com=
+update.googleapis.com=
